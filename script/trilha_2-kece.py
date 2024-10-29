@@ -4,9 +4,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-N = 16
-Vi = [0, 0.61, 1.14, 1.50, 1.92, 2.25, 2.04, 2.42, 2.75, 3.13, 3.48, 
-      3.81, 4.29, 4.40, 4.74, 5.22 ]     
+N = 8
+Vi = [0, 1.34, 1.74, 2.29, 2.83, 3.30, 4.02, 4.62]     
 i = np.arange(1,N+1,1)
 W = 0.01
 xi = W*(i-1) + W/2
@@ -24,5 +23,6 @@ plt.ylabel('V [volt]')
 #EQM
 EQM = (1/N)*sum(np.square(Vi-k*(xi-W/2)))
 print("EQM =", EQM)
-plt.text(0.02,5,'EQM = ' + str(EQM))
+plt.text(0.02, 4.5,'EQM = ' + str(EQM))
+plt.title("Trilha 2 - Kece Line")
 plt.show()
