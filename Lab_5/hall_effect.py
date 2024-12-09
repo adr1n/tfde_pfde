@@ -46,7 +46,7 @@ Vs_lin = alfa[0] * gc1 + alfa[1] * gc2
 # Plotando o Modelo Não-linear
 plt.figure(1)
 plt.plot(teta, Vs, 'or', label="Pontos Experimentais")
-# plt.plot(angulo, Vs_lin, 'b', label="Modelo Ajustado Não-linear")
+plt.plot(angulo, Vs_lin, 'b', label="Modelo Ajustado Não-linear")
 plt.xlabel('Ângulo [graus]')
 plt.ylabel('Vs [volts]')
 plt.title('Sensor Hall - Modelo Não-linear')
