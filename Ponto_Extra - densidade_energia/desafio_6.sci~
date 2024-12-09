@@ -21,13 +21,13 @@ F1_int = 0;
 for k = 1:N
     // Cálculo da densidade de estados para o caso dos elétrons na banda de condução
     if E(k) > Ec // Garantir que estamos acima da energia mínima da banda de condução
-        Dc(k) = (1 / (2 * (pi^2))) * (((2 * mc) / (h^2))^(3/2)) * sqrt(E(k) - Ec);
+        Dc(k) = (1 / (2 * (pi^2))) * (((2 * mc) / (h^2))^(3/2)) * (E(k) - Ec)^(1/2);
     else
         Dc(k) = 0; // Para energias abaixo de Ec, a densidade de estados é zero
     end
     
     if E(k) < Ev
-        Dv(k) = (1 / (2 * (pi^2))) * (((2 * mv) / (h^2))^(3/2)) * sqrt(Ev - E(k));
+        Dv(k) = (1 / (2 * (pi^2))) * (((2 * mv) / (h^2))^(3/2)) * (Ev - E(k))^(1/2);
     else
         Dv(k) = 0;
     end
@@ -36,20 +36,13 @@ for k = 1:N
     F1(k) = Dv(k)*(1-f(k));
 end
 
-function y=D(E),y=(1 / (2 * (pi^2))) * (((2 * mc) / (h^2))^(3/2)) * (E - Ec)^(1/2)
+function function y=D(E),y=(1 / (2 * (pi^2))) * (((2 * mc) / (h^2))^(3/2)) * (E(k) - Ec)^(1/2)
 endfunction
 
-function y=f1(E),y=1/(e^((E-Ei)/k_B)+1)
-endfunction
-
-function y=F2(E),y=D(E)*f1(E)
-endfunction
-
-I=intg(Ec,1,F2)
 
 
-disp(I);
-
+mprintf("Integral de F = %.3f", F_int);
+mprintf("Integral de F1 = %.3f", F1_int);
 
 clf;
 figure(0);
@@ -72,9 +65,9 @@ legend('Função de Distribuição');
 
 figure(2);
 clf;  // Limpa a nova janela gráfica
-plot(F, E, 'r-');  
+plot(F, E, 'g-');  
 plot(F1, E, 'g-');
-title('Curvas para o ni');
+title('Função de Distribuição');
 ylabel('Energia (J)');
-xlabel('f(E)*D(E)');
-legend('Ec', 'Ev');
+xlabel('f(E)');
+legend('Função de Distribuição');

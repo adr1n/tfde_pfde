@@ -1,24 +1,32 @@
-// Dados principais para o gráfico
-x = [0, 1, 2, 3, 4, 5];
-y = [2, 4, 6, 8, 10, 12];
+// Criando o eixo e espaço de energia (E)
+E = [0:0.1:10];  // Vetor para simular os valores de energia
+Nc = exp((E - 5));  // Simulando curva Nc (pode ser ajustado conforme necessário)
+Nv = exp((5 - E));  // Simulando curva Nv (pode ser ajustado conforme necessário)
 
-// Plotando o gráfico original
-plot(x, y, '-o');
-xlabel('Eixo X');
-ylabel('Eixo Y');
-title('Gráfico com Linha de Altura');
+// Plotando as curvas Nc e Nv
+plot(E, Nc, 'b-');  // Curva azul para Nc
+plot(E, Nv, 'r-');  // Curva vermelha para Nv
 
-// Altura que será destacada
-altura = 7;
+// Marcar os níveis de energia Ec, Ev e Ei
+Ec = 5;  // Exemplo de nível Ec
+Ev = 3;  // Exemplo de nível Ev
+Ei = 4;  // Exemplo de nível Ei
 
-// Adicionando a linha horizontal
-xMin = gca().data_bounds(1, 1);  // Obtém o limite inferior do eixo X
-xMax = gca().data_bounds(1, 2);  // Obtém o limite superior do eixo X
-plot([xMin, xMax], [altura, altura], 'r--'); // Linha horizontal em y=altura
+// Linhas horizontais para Ec, Ev, e Ei
+xMin = gca().data_bounds(1,1);
+xMax = gca().data_bounds(1,2);
+plot([xMin, xMax], [Ec, Ec], 'k--'); // Linha para Ec
+plot([xMin, xMax], [Ev, Ev], 'k--'); // Linha para Ev
+plot([xMin, xMax], [Ei, Ei], 'k--'); // Linha para Ei
 
-// Adicionando a label
-xLabelPos = xMax - (xMax - xMin) * 0.2;  // Define a posição da label no eixo X
-yLabelPos = altura + 0.3;  // Define a posição da label acima da linha
-xstring(xLabelPos, yLabelPos, 'Altura = 7');
+// Adicionando labels para Ec, Ev, Ei
+xstring(xMax-3, Ec, 'E_c');
+xstring(xMax-3, Ev, 'E_v');
+xstring(xMax-3, Ei, 'E_i');
 
-legend(['Dados', 'Altura Marcada']);
+title('Curvas de Nc e Nv com níveis de energia');
+xlabel('E (Energia)');
+ylabel('Densidade de Estado');
+legend(['Nc', 'Nv', 'E_níveis']);
+
+
