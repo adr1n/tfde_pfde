@@ -19,7 +19,7 @@ print("Rldr:", Rldr)
 Ildr = (12 - VR1)/Rldr  
 print("Ildr", Ildr)
 
-Iled = VR2alvo / 979  # Corrente em amperes
+Iled = VR2alvo / R2  # Corrente em amperes
 print("Iled", Iled)
 
 Gldr = 1 / Rldr # Condutância

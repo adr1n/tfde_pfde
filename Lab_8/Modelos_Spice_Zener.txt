@@ -1,0 +1,461 @@
+*https://ltwiki.org/files/LTspiceIV/Vendor%20List/Diodes%20Incorporated/Spice/spicemodels_zener_diodes.txt
+
+*SRC=1N4728A;DI_1N4728A;Diodes;Zener <=10V; 3.30V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4728A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 0.972
+.MODEL DF D ( IS=125p RS=0.620 N=1.10
++ CJO=364p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=25.0f RS=1.24 N=3.00 )
+.ENDS
+
+*SRC=1N4729A;DI_1N4729A;Diodes;Zener <=10V; 3.60V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4729A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 1.30
+.MODEL DF D ( IS=114p RS=0.620 N=1.10
++ CJO=319p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=22.9f RS=0.923 N=3.00 )
+.ENDS
+
+*SRC=1N4730A;DI_1N4730A;Diodes;Zener <=10V; 3.90V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4730A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 1.63
+.MODEL DF D ( IS=106p RS=0.620 N=1.10
++ CJO=283p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=21.1f RS=0.645 N=3.00 )
+.ENDS
+
+*SRC=1N4732A;DI_1N4732A;Diodes;Zener <=10V; 4.70V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4732A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 2.99
+.MODEL DF D ( IS=87.7p RS=0.620 N=1.10
++ CJO=214p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=17.5f RS=0.333 N=2.28 )
+.ENDS
+
+*SRC=1N4733A;DI_1N4733A;Diodes;Zener <=10V; 5.10V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4733A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 3.69
+.MODEL DF D ( IS=80.8p RS=0.620 N=1.10
++ CJO=189p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=16.2f RS=0.296 N=1.87 )
+.ENDS
+
+*SRC=1N4734A;DI_1N4734A;Diodes;Zener <=10V; 5.60V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4734A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 4.48
+.MODEL DF D ( IS=73.6p RS=0.620 N=1.10
++ CJO=165p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=14.7f RS=0.256 N=1.49 )
+.ENDS
+
+*SRC=1N4735A;DI_1N4735A;Diodes;Zener <=10V; 6.20V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4735A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 5.33
+.MODEL DF D ( IS=66.5p RS=0.620 N=1.10
++ CJO=141p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=13.3f RS=0.218 N=1.16 )
+.ENDS
+
+*SRC=1N4736A;DI_1N4736A;Diodes;Zener <=10V; 6.80V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4736A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 6.05
+.MODEL DF D ( IS=60.6p RS=0.620 N=1.10
++ CJO=123p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=12.1f RS=0.209 N=1.00 )
+.ENDS
+
+*SRC=1N4737A;DI_1N4737A;Diodes;Zener <=10V; 7.50V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4737A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 6.68
+.MODEL DF D ( IS=54.9p RS=0.620 N=1.10
++ CJO=106p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=11.0f RS=0.247 N=1.09 )
+.ENDS
+
+*SRC=1N4738A;DI_1N4738A;Diodes;Zener <=10V; 8.20V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4738A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 7.33
+.MODEL DF D ( IS=50.2p RS=0.620 N=1.10
++ CJO=92.8p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=10.0f RS=0.288 N=1.15 )
+.ENDS
+
+*SRC=1N4739A;DI_1N4739A;Diodes;Zener <=10V; 9.10V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4739A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 8.16
+.MODEL DF D ( IS=45.3p RS=0.620 N=1.10
++ CJO=79.4p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=9.05f RS=0.344 N=1.24 )
+.ENDS
+
+*SRC=1N4740A;DI_1N4740A;Diodes;Zener <=10V; 10.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4740A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 9.02
+.MODEL DF D ( IS=41.2p RS=0.620 N=1.10
++ CJO=68.9p VJ=0.750 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=8.24f RS=0.403 N=1.30 )
+.ENDS
+
+*SRC=1N4741A;DI_1N4741A;Diodes;Zener 10V-50V; 11.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4741A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 9.94
+.MODEL DF D ( IS=37.5p RS=0.620 N=1.10
++ CJO=101p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=7.49f RS=0.474 N=1.41 )
+.ENDS
+
+*SRC=1N4742A;DI_1N4742A;Diodes;Zener 10V-50V; 12.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4742A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 10.9
+.MODEL DF D ( IS=34.3p RS=0.620 N=1.10
++ CJO=94.2p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=6.87f RS=0.550 N=1.49 )
+.ENDS
+
+*SRC=1N4743A;DI_1N4743A;Diodes;Zener 10V-50V; 13.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4743A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 11.8
+.MODEL DF D ( IS=31.7p RS=0.620 N=1.10
++ CJO=88.1p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=6.34f RS=0.630 N=1.55 )
+.ENDS
+
+*SRC=1N4744A;DI_1N4744A;Diodes;Zener 10V-50V; 15.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4744A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 13.7
+.MODEL DF D ( IS=27.5p RS=0.620 N=1.10
++ CJO=78.3p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=5.49f RS=0.804 N=1.77 )
+.ENDS
+
+*SRC=1N4745A;DI_1N4745A;Diodes;Zener 10V-50V; 16.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4745A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 14.6
+.MODEL DF D ( IS=25.7p RS=0.620 N=1.10
++ CJO=74.4p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=5.15f RS=0.897 N=1.80 )
+.ENDS
+
+*SRC=1N4746A;DI_1N4746A;Diodes;Zener 10V-50V; 18.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4746A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 16.5
+.MODEL DF D ( IS=22.9p RS=0.620 N=1.10
++ CJO=67.8p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=4.58f RS=1.10 N=1.98 )
+.ENDS
+
+*SRC=1N4747A;DI_1N4747A;Diodes;Zener 10V-50V; 20.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4747A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 18.4
+.MODEL DF D ( IS=20.6p RS=0.620 N=1.10
++ CJO=62.5p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=4.12f RS=1.31 N=2.12 )
+.ENDS
+
+*SRC=1N4748A;DI_1N4748A;Diodes;Zener 10V-50V; 22.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4748A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 20.3
+.MODEL DF D ( IS=18.7p RS=0.620 N=1.10
++ CJO=58.2p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=3.75f RS=1.54 N=2.29 )
+.ENDS
+
+*SRC=1N4749A;DI_1N4749A;Diodes;Zener 10V-50V; 24.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4749A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 22.2
+.MODEL DF D ( IS=17.2p RS=0.620 N=1.10
++ CJO=54.6p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=3.43f RS=1.79 N=2.42 )
+.ENDS
+
+*SRC=1N4750A;DI_1N4750A;Diodes;Zener 10V-50V; 27.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4750A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 25.0
+.MODEL DF D ( IS=15.3p RS=0.620 N=1.10
++ CJO=50.2p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=3.05f RS=2.18 N=2.68 )
+.ENDS
+
+*SRC=1N4751A;DI_1N4751A;Diodes;Zener 10V-50V; 30.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4751A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 27.8
+.MODEL DF D ( IS=13.7p RS=0.620 N=1.10
++ CJO=46.7p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=2.75f RS=2.61 N=2.87 )
+.ENDS
+
+*SRC=1N4752A;DI_1N4752A;Diodes;Zener 10V-50V; 33.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4752A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 30.8
+.MODEL DF D ( IS=12.5p RS=0.620 N=1.10
++ CJO=43.8p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=2.50f RS=3.07 N=2.98 )
+.ENDS
+
+*SRC=1N4753A;DI_1N4753A;Diodes;Zener 10V-50V; 36.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4753A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 33.7
+.MODEL DF D ( IS=11.4p RS=0.620 N=1.10
++ CJO=41.4p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=2.29f RS=4.38 N=3.00 )
+.ENDS
+
+*SRC=1N4754A;DI_1N4754A;Diodes;Zener 10V-50V; 39.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4754A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 36.7
+.MODEL DF D ( IS=10.6p RS=0.620 N=1.10
++ CJO=39.4p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=2.11f RS=5.78 N=3.00 )
+.ENDS
+
+*SRC=1N4755A;DI_1N4755A;Diodes;Zener 10V-50V; 43.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4755A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 40.7
+.MODEL DF D ( IS=9.58p RS=0.620 N=1.10
++ CJO=37.1p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=1.92f RS=7.99 N=3.00 )
+.ENDS
+
+*SRC=1N4756A;DI_1N4756A;Diodes;Zener 10V-50V; 47.0V  1.00W   Diodes Inc.
+Zener
+*SYM=HZEN
+.SUBCKT DI_1N4756A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 44.7
+.MODEL DF D ( IS=8.77p RS=0.620 N=1.10
++ CJO=35.2p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=1.75f RS=10.2 N=3.00 )
+.ENDS
+
+*SRC=1N4757A;DI_1N4757A;Diodes;Zener >50V; 51.0V  1.00W   Diodes Inc. Zener
+*SYM=HZEN
+.SUBCKT DI_1N4757A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 48.7
+.MODEL DF D ( IS=8.08p RS=0.620 N=1.10
++ CJO=33.6p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=1.62f RS=12.4 N=3.00 )
+.ENDS
+
+*SRC=1N4758A;DI_1N4758A;Diodes;Zener >50V; 56.0V  1.00W   Diodes Inc. Zener
+*SYM=HZEN
+.SUBCKT DI_1N4758A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 53.7
+.MODEL DF D ( IS=7.36p RS=0.620 N=1.10
++ CJO=32.0p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=1.47f RS=15.5 N=3.00 )
+.ENDS
+
+*SRC=1N4759A;DI_1N4759A;Diodes;Zener >50V; 62.0V  1.00W   Diodes Inc. Zener
+*SYM=HZEN
+.SUBCKT DI_1N4759A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 59.7
+.MODEL DF D ( IS=6.65p RS=0.620 N=1.10
++ CJO=30.3p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=1.33f RS=19.6 N=3.00 )
+.ENDS
+
+*SRC=1N4760A;DI_1N4760A;Diodes;Zener >50V; 68.0V  1.00W   Diodes Inc. Zener
+*SYM=HZEN
+.SUBCKT DI_1N4760A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 65.7
+.MODEL DF D ( IS=6.06p RS=0.620 N=1.10
++ CJO=29.0p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=1.21f RS=24.6 N=3.00 )
+.ENDS
+
+*SRC=1N4761A;DI_1N4761A;Diodes;Zener >50V; 75.0V  1.00W   Diodes Inc. Zener
+*SYM=HZEN
+.SUBCKT DI_1N4761A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 72.7
+.MODEL DF D ( IS=5.49p RS=0.620 N=1.10
++ CJO=27.7p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=1.10f RS=30.4 N=3.00 )
+.ENDS
+
+*SRC=1N4762A;DI_1N4762A;Diodes;Zener >50V; 82.0V  1.00W   Diodes Inc. Zener
+*SYM=HZEN
+.SUBCKT DI_1N4762A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 79.7
+.MODEL DF D ( IS=5.02p RS=0.620 N=1.10
++ CJO=26.6p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=1.00f RS=36.8 N=3.00 )
+.ENDS
+
+*SRC=1N4763A;DI_1N4763A;Diodes;Zener >50V; 91.0V  1.00W   Diodes Inc. Zener
+*SYM=HZEN
+.SUBCKT DI_1N4763A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 88.6
+.MODEL DF D ( IS=4.53p RS=0.620 N=1.10
++ CJO=25.4p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=9.05e-016 RS=47.1 N=3.00 )
+.ENDS
+
+*SRC=1N4764A;DI_1N4764A;Diodes;Zener >50V; 100V  1.00W   Diodes Inc. Zener
+*SYM=HZEN
+.SUBCKT DI_1N4764A  1 2
+*        Terminals    A   K
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 97.6
+.MODEL DF D ( IS=4.12p RS=0.620 N=1.10
++ CJO=24.5p VJ=1.00 M=0.330 TT=50.1n )
+.MODEL DR D ( IS=8.24e-016 RS=56.8 N=3.00 )
+.ENDS
