@@ -64,7 +64,7 @@ legend(['Dc (Banda de condução)', 'Dv (Banda de valência)']);
 
 figure(1);
 clf;  // Limpa a nova janela gráfica
-plot(f, E, 'g-');  
+plot(f, E, 'g-');
 title('Função de Distribuição');
 ylabel('Energia (J)');
 xlabel('f(E)');
@@ -72,7 +72,7 @@ legend('Função de Distribuição');
 
 figure(2);
 clf;  // Limpa a nova janela gráfica
-plot(F, E, 'r-');  
+plot(F, E, 'r-');
 plot(F1, E, 'g-');
 title('Curvas para o ni');
 ylabel('Energia (J)');
